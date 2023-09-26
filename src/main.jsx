@@ -9,7 +9,7 @@ import {
 import Home from './components/Home/Home';
 
 import Root from './components/Root/Root';
-import ErrorPage from './components/ErrorPage/Errorpage';
+
 import DonationDetails from './components/DonationDetails/DonationDetails';
 import TotalDonation from './components/TotalDonation/TotalDonation';
 
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement:<ErrorPage></ErrorPage>,
+   
     children:[
       {
         path: "/",
