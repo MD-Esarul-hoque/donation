@@ -20,7 +20,7 @@ const CardLoad = ({results}) => {
     return (
         <div>
            
-            
+           
             <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 
                 {
@@ -32,7 +32,7 @@ const CardLoad = ({results}) => {
                 
             </div>
             <div >
-                <div>
+                <div className={results.length>0  ? 'hidden':'block' }>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 ">
                     {
                          cardLoad.map(card =><Card card={card} key={card.id}></Card>)
